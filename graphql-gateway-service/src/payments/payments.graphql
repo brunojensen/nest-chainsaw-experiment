@@ -1,0 +1,12 @@
+type Payment {
+  id: string;
+  sender: string;
+  receiver: string;
+  amount: number;
+}
+
+type Query {
+  payments: [Payment]!
+  payment(id: string!): Payment
+}
+
